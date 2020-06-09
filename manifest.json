@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "hide-whitespaces-github",
+  "version": "0.1.0",
+  "description": "Always hide whitespaces in GitHub",
+  "permissions": ["https://github.com/**"],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/**"],
+      "run_at": "document_start",
+      "js": ["hide-whitespaces.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  }
+}
