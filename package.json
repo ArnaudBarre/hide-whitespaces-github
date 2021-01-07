@@ -1,6 +1,6 @@
 {
   "name": "hide-whitespaces-github",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "scripts": {
     "generate-icon": "convert-svg-to-png --width 128 icon.svg",
     "generate-screenshot": "convert-svg-to-png --width 640 --height 400 --background white icon.svg",

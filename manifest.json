@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "hide-whitespaces-github",
-  "version": "0.2.0",
+  "name": "Hide whitespaces GitHub",
+  "version": "0.3.0",
   "description": "Always hide whitespaces in GitHub",
   "permissions": ["https://github.com/**"],
   "content_scripts": [
