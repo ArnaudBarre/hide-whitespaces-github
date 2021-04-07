@@ -7,7 +7,9 @@ window.onclick = function () {
 };
 
 function updateUrlIfNeeded() {
-  if (!currentURL.match(/github.com\/.*\/.*\/pull\/.*\/files/)) return;
+  if (!currentURL.match(/github.com\/.*\/.*\/pull\/.*\/(files|commits)/)) {
+    return;
+  }
   const url = new URL(location);
   if (url.searchParams.get("w")) return;
   url.searchParams.set("w", "1");
