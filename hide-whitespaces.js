@@ -1,10 +1,4 @@
 let currentURL = location.href;
-window.onclick = function () {
-  if (currentURL !== location.href) {
-    currentURL = location.href;
-    updateUrlIfNeeded();
-  }
-};
 
 function updateUrlIfNeeded() {
   if (
@@ -18,5 +12,19 @@ function updateUrlIfNeeded() {
   window.history.replaceState(null, null, url.toString());
   location.reload();
 }
+
+window.onload = function () {
+  new MutationObserver((mutations) => {
+    mutations.forEach(() => {
+      if (currentURL !== location.href) {
+        currentURL = location.href;
+        updateUrlIfNeeded();
+      }
+    });
+  }).observe(document.querySelector("body"), {
+    childList: true,
+    subtree: true,
+  });
+};
 
 updateUrlIfNeeded();
