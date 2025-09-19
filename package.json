@@ -1,7 +1,7 @@
 {
   "name": "hide-whitespaces-github",
   "private": true,
-  "version": "0.6.0",
+  "version": "0.7.0",
   "scripts": {
     "generate-icon": "convert-svg-to-png --width 128 icon.svg",
     "generate-screenshot": "convert-svg-to-png --width 640 --height 400 --background white icon.svg",
@@ -10,10 +10,10 @@
     "package": "zip hide-whitespaces-github.zip manifest.json hide-whitespaces.js icon.png"
   },
   "devDependencies": {
-    "prettier": "^2.7.1",
-    "convert-svg-to-png": "^0.6.4"
+    "prettier": "^3.6.2",
+    "convert-svg-to-png-cli": "^0.7.1"
   },
   "prettier": {
-    "trailingComma": "all"
+    "experimentalOperatorPosition": "start"
   }
 }

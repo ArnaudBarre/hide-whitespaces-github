@@ -1,3 +1,2 @@
-.idea
-node_modules
-hide-whitespaces-github.zip
+/node_modules/
+/hide-whitespaces-github.zip
