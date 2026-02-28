@@ -2,7 +2,9 @@ let currentURL = location.href;
 
 function updateUrlIfNeeded() {
   if (
-    !currentURL.match(/github.com\/.*\/.*\/(pull\/.*\/(files|commits))|compare/)
+    !currentURL.match(
+      /github.com\/.*\/.*\/(pull\/.*\/(files|commits|changes))|compare/,
+    )
   ) {
     return;
   }
